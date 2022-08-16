@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@200&display=swap');
+body {
+    font-family: Tahoma,'Roboto', sans-serif;
+    text-align:center;
+    background-color:#1b1b32;
+    width:100%;
+    color:rgb(201, 203, 230);
+}
+
+form {
+    max-width:500px;
+    min-width:300px;
+    height:auto;
+    margin:0 auto;
+    border:none;
+    text-align:left;
+}
+
+input, select, textarea {
+    background-color: #0a0a23;
+    border: none;
+    margin: 1em auto;
+}
+label, input, textarea, select {
+    width:100%;
+    color:rgb(201, 203, 230);
+}
+.selection {
+    width:unset;
+    vertical-align: left;
+}
+
+fieldset {
+    border:none;
+    border-bottom: 3px solid #3b3b4f;
+    margin:1em 0;
+}
+
+
+input[type="submit"] {
+    font-size:2em;
+}
+
+input[type="submit"]:hover {
+    color: #6f64d3;
+}
+
+fieldset:last-of-type {
+    border:none;
+}

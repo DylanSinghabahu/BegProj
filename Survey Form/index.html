@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Feel free to not fill the form...it won't submit anything anyway.</p>    
+    <form action="https://sendthisdatanowhere.com">
+        <fieldset>
+            <label>
+                First Name: <input type="text" name="firstname" required>
+            </label>
+            <label>
+                Last Name: <input type="text" name="lastname" required>
+            </label>
+            <label>
+                Email: <input type="email" name="email" required>
+            </label>
+            <label>
+                Create A Password (8 characters minimum): <input type="password" pattern="[0-9A-Za-z]{8,}" name="firstname" required>
+            </label>
+        </fieldset>
+        <fieldset> What email are you using?
+            <label class="inline"><input type="radio" name="account-type"> Student Account</label>
+            <label class="inline"><input type="radio" name="account-type"> Business Account </label>
+            <label class="inline"><input type="radio" name="account-type"> Personal Account</label>
+            <label class="inline"><input type="radio" name="account-type"> Other</label>
+        </fieldset>
+        <fieldset>
+            <label>
+                How old are you? <input type="number" min="0" max="120">
+            </label>
+            What do you think of this? 
+            <label>
+                <select>
+                    <option value="Default">Please Select an Option</option>
+                    <option value="first-option">Good</option>
+                    <option value="second-option">Amazing</option>
+                    <option value="third-option">Amazing!!!</option>
+                </select>
+            </label>
+            <label id="resume">
+                Upload Resume <input type="file">
+            </label>
+            <label">
+                In 100 words or less, please explain why this looks epic.
+                <textarea name="my-justification-for-why-this-site-is-epic" rows="3" cols="50" placeholder="This site is awesome because..."></textarea>
+            </label>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
