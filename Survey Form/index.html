@@ -12,17 +12,17 @@
     <p>Feel free to not fill the form...it won't submit anything anyway.</p>    
     <form action="https://sendthisdatanowhere.com">
         <fieldset>
-            <label>
-                First Name: <input type="text" name="firstname" required>
+            <label class="block">
+                First Name: <input type="text" class="block" name="firstname" required>
             </label>
-            <label>
-                Last Name: <input type="text" name="lastname" required>
+            <label class="block">
+                Last Name: <input type="text" class="block" name="lastname" required>
             </label>
-            <label>
-                Email: <input type="email" name="email" required>
+            <label class="block">
+                Email: <input type="email" name="email" required class="block">
             </label>
-            <label>
-                Create A Password (8 characters minimum): <input type="password" pattern="[0-9A-Za-z]{8,}" name="firstname" required>
+            <label class="block">
+                Create A Password (8 characters minimum): <input class="block" type="password" pattern="[0-9A-Za-z]{8,}" name="firstname" required>
             </label>
         </fieldset>
         <fieldset> What email are you using?
@@ -32,26 +32,29 @@
             <label class="inline"><input type="radio" name="account-type"> Other</label>
         </fieldset>
         <fieldset>
-            <label>
-                How old are you? <input type="number" min="0" max="120">
+            <label class="block">
+                How old are you? <input class="block" type="number" min="0" max="120">
             </label>
-            What do you think of this? 
-            <label>
-                <select>
+            <label class="block">
+                What do you think of this? 
+                <select class="block">
                     <option value="Default">Please Select an Option</option>
                     <option value="first-option">Good</option>
                     <option value="second-option">Amazing</option>
                     <option value="third-option">Amazing!!!</option>
                 </select>
             </label>
-            <label id="resume">
+            <label class="block">
                 Upload Resume <input type="file">
             </label>
-            <label">
+            <label class="block">
                 In 100 words or less, please explain why this looks epic.
-                <textarea name="my-justification-for-why-this-site-is-epic" rows="3" cols="50" placeholder="This site is awesome because..."></textarea>
+                <textarea class="block" name="my-justification-for-why-this-site-is-epic" rows="3" cols="50" placeholder="This site is awesome because..."></textarea>
             </label>
-            <input type="submit" value="Submit">
+            <label class="block">
+                <input type="checkbox" required> I agree to the non-existant <a href="nothing.com">terms and conditions</a>
+            </label>
+            <input type="submit" class="block" value="Submit">
         </fieldset>
     </form>
 </body>
